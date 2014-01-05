@@ -12,7 +12,7 @@
     "url": "https://github.com/jhermsmeier"
   },
   
-  "main": "lib/file.js",
+  "main": "lib/file",
   
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha"
