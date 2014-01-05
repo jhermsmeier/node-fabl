@@ -31,10 +31,46 @@ var file = File.create( 'README.md', 0666, function( error ) {
 })
 ```
 
+Checking existance of a file:
+```js
+File.exists( 'schrödingers.cat' )
+File.exists( 'schrödingers.cat', function( error, exists ) {
+  // ...
+})
+```
+
+Stat a file:
+```js
+File.stat( 'schrödingers.cat' )
+File.stat( 'schrödingers.cat', function( error, stats ) {
+  // ...
+})
+```
+
+Renaming a file:
+```js
+// Rename and move are synonym
+File.move( 'rain.txt', 'trash.txt' )
+File.rename( 'junk.food', 'trash.txt', function( error ) {
+  // ...
+})
+```
+
+Truncating/Allocating a file:
+```js
+// Truncate and allocate are aliases,
+// Size is optional, defaults to zero
+File.truncate( 'trash.txt' )
+File.allocate( 'random.mp3', 0x5000, function( error ) {
+  // ...
+})
+```
+
 Deleting a file:
 ```js
+// Delete and unlink are aliases
 File.delete( 'trash.txt' )
-File.delete( 'trash.txt', function( error ) {
+File.unlink( 'trash.txt', function( error ) {
   // ...
 })
 ```
