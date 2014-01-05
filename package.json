@@ -18,7 +18,9 @@
     "test": "node node_modules/mocha/bin/mocha"
   },
   
-  "dependencies": {},
+  "dependencies": {
+    "double-ended-queue": ""
+  },
   
   "devDependencies": {
     "mocha": ""
