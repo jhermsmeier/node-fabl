@@ -47,9 +47,33 @@ describe( 'File', function() {
     })
   })
   
-  it( 'should be able to read from an OOB offset', function( done ) {
-    tmp.read( 256, 10, done )
-    tmp.read( 256, 10 )
+  it( 'should NOT be able to read from an OOB offset', function( done ) {
+    tmp.read( 256, 10, function( error, read, buffer ) {
+      assert.ok( error )
+      done()
+    })
+    assert.throws( function() {
+      tmp.read( 256, 10 )
+    })
+  })
+  
+  it( 'should be able to create a writeStream of file', function( done ) {
+    var data = '11111 11111\0'
+    var ws = tmp.writeStream()
+    tmp.offset = 0
+    ws.write( data, function() {
+      done()
+    })
+  })
+  
+  it( 'should be able to create a readStream of file', function( done ) {
+    var data = '11111 11111\0'
+    var rs = tmp.readStream()
+    rs.on( 'readable', function() {
+      var bytes = rs.read()
+      assert.ok( bytes.toString().indexOf( data ) === 0 )
+      done()
+    })
   })
   
   it( 'should be able to allocate to a file', function() {
