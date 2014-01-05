@@ -24,18 +24,12 @@ describe( 'File', function() {
   
   it( 'should be able to write to an OOB offset', function( done ) {
     tmp.write( '\0', 127, done )
-    tmp.write( '\0', 127 )
+    tmp.write( '\0', 396 )
   })
   
   it( 'should NOT be able to seek to OOB offset', function() {
     assert.throws( function() {
       tmp.seek( 256 * 1024 )
-    })
-  })
-  
-  it( 'should be able to seek to with negative offset', function() {
-    assert.doesNotThrow( function() {
-      tmp.seek( -1 )
     })
   })
   
@@ -49,12 +43,12 @@ describe( 'File', function() {
   })
   
   it( 'should NOT be able to read from an OOB offset', function( done ) {
-    tmp.read( 256, 10, function( error, read, buffer ) {
+    tmp.read( 256 * 1024, 10, function( error, read, buffer ) {
       assert.ok( error )
       done()
     })
     assert.throws( function() {
-      tmp.read( 256, 10 )
+      tmp.read( 256 * 1024, 10 )
     })
   })
   
