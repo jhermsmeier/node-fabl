@@ -1,38 +1,29 @@
 {
-  
   "name": "fabl",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "license": "MIT",
   "description": "File Abstraction Layer",
   "kewords": [],
-  
   "author": {
     "name": "Jonas Hermsmeier",
     "email": "jhermsmeier@gmail.com",
     "url": "https://github.com/jhermsmeier"
   },
-  
   "main": "lib/file",
-  
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha"
   },
-  
   "dependencies": {
     "double-ended-queue": ""
   },
-  
   "devDependencies": {
     "mocha": ""
   },
-  
   "repository": {
     "type": "git",
     "url": "https://github.com/jhermsmeier/node-fabl.git"
   },
-  
   "bugs": {
     "url": "https://github.com/jhermsmeier/node-fabl/issues"
   }
-  
 }
