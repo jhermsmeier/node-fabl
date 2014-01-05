@@ -2,6 +2,7 @@ var assert = require( 'assert' )
 var File = require( '../' )
 
 const TEMP = __dirname + '/file.tmp'
+const RENM = __dirname + '/renamed.tmp'
 
 describe( 'File', function() {
   
@@ -90,6 +91,10 @@ describe( 'File', function() {
     assert.equal( stat.size, size )
   })
   
+  it( 'should be able to rename a file', function( done ) {
+    tmp.rename( RENM, done )
+  })
+  
   it( 'should be able to close an opened file', function( done ) {
     tmp.close( function( error ) {
       tmp = null
@@ -98,7 +103,7 @@ describe( 'File', function() {
   })
   
   it( 'should be able to delete a file', function( done ) {
-    File.delete( TEMP, done )
+    File.delete( RENM, done )
   })
   
 })
