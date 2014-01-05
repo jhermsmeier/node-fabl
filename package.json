@@ -1,7 +1,7 @@
 {
   
   "name": "fabl",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "File Abstraction Layer",
   "kewords": [],
@@ -18,9 +18,7 @@
     "test": "node node_modules/mocha/bin/mocha"
   },
   
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   
   "devDependencies": {
     "mocha": ""
