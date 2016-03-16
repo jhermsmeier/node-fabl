@@ -14,10 +14,10 @@
     "test": "node node_modules/mocha/bin/mocha"
   },
   "dependencies": {
-    "double-ended-queue": "~2.0.0"
+    "double-ended-queue": "~2.1.0-0"
   },
   "devDependencies": {
-    "mocha": ""
+    "mocha": "~2.4.5"
   },
   "repository": {
     "type": "git",
