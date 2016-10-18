@@ -1,13 +1,13 @@
 # FABL - File Abstraction Layer
-[![npm](https://img.shields.io/npm/v/fabl.svg?style=flat-square)](https://npmjs.com/fabl)
-[![npm](https://img.shields.io/npm/l/fabl.svg?style=flat-square)](https://npmjs.com/fabl)
-[![npm downloads](https://img.shields.io/npm/dm/fabl.svg?style=flat-square)](https://npmjs.com/fabl)
+[![npm](https://img.shields.io/npm/v/fabl.svg?style=flat-square)](https://npmjs.com/package/fabl)
+[![npm](https://img.shields.io/npm/l/fabl.svg?style=flat-square)](https://npmjs.com/package/fabl)
+[![npm downloads](https://img.shields.io/npm/dm/fabl.svg?style=flat-square)](https://npmjs.com/package/fabl)
 [![build status](https://img.shields.io/travis/jhermsmeier/node-fabl.svg?style=flat-square)](https://travis-ci.org/jhermsmeier/node-fabl)
 
 ## Install via [npm](https://npmjs.org)
 
 ```sh
-$ npm install fabl
+$ npm install --save fabl
 ```
 
 ## Usage
