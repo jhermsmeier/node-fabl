@@ -1,6 +1,6 @@
 {
   "name": "fabl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "Jonas Hermsmeier <jhermsmeier@gmail.com> (https://jhermsmeier.de)",
   "description": "File Abstraction Layer",
@@ -10,7 +10,7 @@
     "denque": "~1.1.0"
   },
   "devDependencies": {
-    "mocha": "~3.1.2"
+    "mocha": "~3.2.0"
   },
   "repository": {
     "type": "git",
